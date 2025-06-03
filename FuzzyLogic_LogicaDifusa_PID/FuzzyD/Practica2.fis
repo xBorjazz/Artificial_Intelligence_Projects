@@ -1,0 +1,40 @@
+[System]
+Name='Practica2'
+Type='mamdani'
+Version=2.0
+NumInputs=2
+NumOutputs=1
+NumRules=4
+AndMethod='min'
+OrMethod='max'
+ImpMethod='min'
+AggMethod='max'
+DefuzzMethod='centroid'
+
+[Input1]
+Name='error'
+Range=[-100 100]
+NumMFs=2
+MF1='en':'trapmf',[-100 -100 -50 50]
+MF2='ep':'trapmf',[-50 50 100 100]
+
+[Input2]
+Name='derivada'
+Range=[-100 100]
+NumMFs=2
+MF1='rn':'trapmf',[-100 -100 -50 50]
+MF2='rp':'trapmf',[-50 50 100 100]
+
+[Output1]
+Name='Salida'
+Range=[0 1]
+NumMFs=3
+MF1='Cerrado':'trimf',[0 0 0]
+MF2='MedioAbierto':'trimf',[0.5 0.5 0.5]
+MF3='Abierto':'trimf',[1 1 1]
+
+[Rules]
+2 2, 3 (1) : 1
+2 1, 2 (1) : 1
+1 2, 2 (1) : 1
+1 1, 1 (1) : 1

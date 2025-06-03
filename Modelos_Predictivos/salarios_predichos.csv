@@ -1,0 +1,6 @@
+Age,Gender,Education Level,Job Title,Years of Experience,Desired salary,Predicted Salary,Error %
+44,Female,PhD,Senior Business Analyst,15,150000,139745.14,6.836572916666666
+29,Female,Bachelor's,Junior Project Manager,2,40000,41886.895,4.717236328125
+44,Female,PhD,Senior Product Designer,15,150000,132718.7,11.520864583333333
+46,Male,PhD,Senior Data Scientist,18,160000,154729.0,3.294375
+36,Male,Bachelor's,Senior Accountant,7,90000,77544.77,13.839140625
